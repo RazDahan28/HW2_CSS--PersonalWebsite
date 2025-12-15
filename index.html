@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title> Raz Dahan</title>
+      <link rel="stylesheet" href="./styles.css">
+       <!-- תגית viewport כדי שהאתר יהיה רספונסיבי במובייל -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- חיבור לפונטים מגוגל  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- ========================================
+         HEADER + HERO - החלק העליון של האתר
+         ======================================== -->
+   <header class="site-header">
+        <!-- ניווט פנימי לדף (גלילה לחלקים שונים בעמוד לפי id) -->
+        <nav class="main-nav">
+            <!-- הערה: קישורים שעושים גלילה לחלקים שונים בעמוד לפי id -->
+            <a href="#about">About</a>
+            <a href="#studies">Studies</a>
+            <a href="#skills">Skills</a>
+            <a href="#lifestyle">Lifestyle</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- אזור ה-Hero: תמונה, כותרת וטקסט קצר עליי -->
+        <div class="hero">
+            <!-- תמונת נושא של מערכות מידע  -->
+            <img src="./images/mis-purple-banner.png" 
+                 alt="Information systems theme " 
+                 class="hero-image">
+
+            <div class="hero-text">
+                <!-- יד מנופפת מעל הכותרת -->
+    <img src="./images/waving.gif" alt="Waving hand" class="wave-hand">
+                <h1>Hello, I'm Raz 💜</h1>
+                <h2>3rd year Information Systems Management student & web development learner</h2>
+                <p>
+                    I love combining technology, design and people.<br>
+                    On campus I'm a Information Systems Management student,<br>
+                    and off campus you'll probably find me in a Pilates workout.
+                </p>
+                <!-- כפתור שמוביל לאזור יצירת קשר -->
+                <a href="#contact" class="hero-button">Let's connect</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- ===== ABOUT ME SECTION ===== -->
+        <section id="about" class="section about-section">
+            <!-- כותרת אזור -->
+            <h2>About Me</h2>
+            <p>
+                I'm a third-year Information Systems Management student, passionate about
+                building smart and user-friendly systems. I enjoy learning new technologies,
+                understanding how organizations work behind the scenes, and finding creative
+                solutions to real-life problems.
+            </p>
+            <p>
+                I like planning, organizing and paying attention to details, but I also love
+                design and creativity. My goal is to combine both – logic and aesthetics –
+                in every project I work on.
+            </p>
+        </section>
+    <!-- ===== STUDIES SECTION ===== -->
+        <section id="studies" class="section studies-section">
+            <h2>Studies & Interests</h2>
+            <!-- שימוש ב-flexbox להצגת "קלפים" של תחומים -->
+            <div class="cards-container">
+                <article class="info-card">
+                    <h3>Management Information Systems</h3>
+                    <p>
+                        I study MIS, combining computer science, business, and data.
+                        Courses include databases, web development, data analysis,
+                        information systems analysis and more.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <h3>Web & UX</h3>
+                    <p>
+                        I enjoy learning HTML & CSS and how to build clean, modern
+                        and responsive websites. I’m curious about UX, user journeys
+                        and how design affects behavior.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <h3>Data & Problem Solving</h3>
+                    <p>
+                        I like working with data, turning numbers into insights, and
+                        understanding how information can support decisions in organizations.
+                    </p>
+                </article>
+            </div>
+        </section>
+<!-- ===== SKILLS SECTION ===== -->
+        <section id="skills" class="section skills-section">
+            <h2>Skills</h2>
+
+            <div class="skills-layout">
+                <!-- רשימת כישורים טכניים -->
+                <div class="skills-column">
+                    <h3>Technical</h3>
+                    <ul>
+                        <li>HTML & CSS (responsive design)</li>
+                        <li>Java & OOP</li>
+                        <li>Databases & SQL</li>
+                        <li>Information Systems Analysis</li>
+                        <li>Basic data analysis in Excel</li>
+                    </ul>
+                </div>
+
+                <!-- רשימת כישורים רכים -->
+                <div class="skills-column">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Organization & time management</li>
+                        <li>Attention to detail</li>
+                        <li>Teamwork & communication</li>
+                        <li>Curiosity & learning new tools</li>
+                        <li>Problem solving</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- ===== LIFESTYLE SECTION ===== -->
+        <section id="lifestyle" class="section lifestyle-section">
+            <h2>Lifestyle & Hobbies</h2>
+
+            <div class="lifestyle-flex">
+                <div class="lifestyle-image-wrapper">
+                    <img src="./images/PilatesIMG.png" alt="Pilates workout" class="lifestyle-image">
+                </div>
+
+                <!-- טקסט על תחביבים -->
+                <div class="lifestyle-text">
+                    <h3>Pilates & Balance</h3>
+                    <p>
+                        One of my favorite parts of the week is my Pilates workouts.
+                        It helps me clear my mind, focus on my body, and keep a good
+                        balance between studies and personal life.
+                    </p>
+                    <p>
+                        Besides fitness, I love music, calm coffee breaks, quality time
+                        with people I care about, and small moments that make a busy day
+                        feel softer.
+                    </p>
+                </div>
+            </div>
+        </section>
+         <!-- ===== CONTACT SECTION ===== -->
+        <section id="contact" class="section contact-section">
+            <h2>Contact</h2>
+            <p>
+                Want to talk about projects, studies, or just say hi? <br>
+                You’re welcome to send me an email:
+            </p>
+            <!-- כפתור שפותח מייל חדש לכתובת שלי -->
+            <a href="mailto:daraz@post.bgu.ac.il" class="contact-button">Email Me</a>
+        </section>
+    </main>
+    <!--footer-->
+     <footer class="site-footer">
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/raz-dahan-a80444344/" target="_blank">LinkedIn</a>
+        </div>
+        <p class="footer-copy">© Raz Dahan. </p>
+    </footer>
+
+
+</body>
+</html>
